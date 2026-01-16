@@ -110,8 +110,8 @@ body {
 }
 
 .logo-circle img { 
-    width: 130%; 
-    height: 130%;
+    width: 90%; 
+    height: 90%;
     object-fit: contain;
     border-radius: 24px;
 }
