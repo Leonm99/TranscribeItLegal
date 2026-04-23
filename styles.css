@@ -7,18 +7,18 @@
 
 /* --- TOKENS --- */
 :root {
-    /* Colors */
+    /* Colors — App-matched Teal/Cyan palette */
     --bg: #ffffff;
     --bg-subtle: #f6f9fc;
-    --bg-dark: #1c1e54;
+    --bg-dark: #003548;
     --heading: #061b35;
     --label: #273952;
     --body: #525d7d;
     --muted: #8896af;
-    --purple: #533afd;
-    --purple-hover: #4434d4;
-    --purple-subtle: rgba(83, 58, 253, 0.06);
-    --purple-border: #b9b9f9;
+    --teal: #186584;
+    --teal-hover: #135a72;
+    --teal-subtle: rgba(24, 101, 132, 0.06);
+    --teal-border: #8ecff2;
     --border: #e5edf5;
     --border-strong: #d0dce8;
     --success: #15be53;
@@ -26,7 +26,6 @@
     --warning: #9b6829;
     --warning-bg: #fffbeb;
     --warning-border: rgba(155, 104, 41, 0.25);
-    --ruby: #ea2261;
 
     /* Shadows — Stripe multi-layer blue-tinted */
     --shadow-sm: 0 1px 2px rgba(50, 50, 93, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
@@ -169,18 +168,18 @@ body::before {
 
 .info-card:hover {
     box-shadow: var(--shadow-lg);
-    border-color: var(--purple-border);
+    border-color: var(--teal-border);
 }
 
 .info-card.full-width-card {
     grid-column: 1 / -1;
     max-width: 100%;
-    background: linear-gradient(135deg, #fafbff 0%, #f0f4ff 100%);
-    border-color: var(--purple-border);
+    background: linear-gradient(135deg, #f0f9fd 0%, #e8f4fa 100%);
+    border-color: var(--teal-border);
 }
 
 .info-card.full-width-card:hover {
-    border-color: var(--purple);
+    border-color: var(--teal);
 }
 
 .icon-header {
@@ -188,7 +187,7 @@ body::before {
     align-items: center;
     gap: var(--space-3);
     margin-bottom: var(--space-4);
-    color: var(--purple);
+    color: var(--teal);
 }
 
 .icon-header i {
@@ -222,7 +221,7 @@ body::before {
     display: inline-flex;
     align-items: center;
     gap: var(--space-2);
-    background: var(--purple);
+    background: var(--teal);
     color: #fff !important;
     text-decoration: none;
     font-family: var(--font-sans);
@@ -237,9 +236,9 @@ body::before {
 }
 
 .cta-button:hover {
-    background: var(--purple-hover);
+    background: var(--teal-hover);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(83, 58, 253, 0.3);
+    box-shadow: 0 4px 12px rgba(24, 101, 132, 0.3);
 }
 
 .cta-button i {
@@ -249,7 +248,7 @@ body::before {
 
 /* --- TEXT LINKS --- */
 .text-link {
-    color: var(--purple);
+    color: var(--teal);
     text-decoration: none;
     font-weight: 400;
     border-bottom: 1px solid rgba(83, 58, 253, 0.3);
@@ -257,8 +256,8 @@ body::before {
 }
 
 .text-link:hover {
-    color: var(--purple-hover);
-    border-bottom-color: var(--purple-hover);
+    color: var(--teal-hover);
+    border-bottom-color: var(--teal-hover);
 }
 
 /* --- LEGAL ACCORDION SECTION --- */
@@ -301,35 +300,21 @@ summary:hover {
     background: var(--bg-subtle);
 }
 
-summary::after {
-    content: '+';
-    font-size: 1.25rem;
-    font-weight: 300;
-    color: var(--purple);
-    transition: transform 0.2s ease;
-    line-height: 1;
-}
-
-details[open] summary::after {
-    transform: rotate(45deg);
-}
-
 details[open] summary {
     border-bottom: 1px solid var(--border);
 }
 
-/* Accordion arrow icon using SVG */
+/* Accordion toggle icon — single SVG, centered in summary */
 summary .arrow-icon {
-    width: 16px;
-    height: 16px;
-    color: var(--muted);
-    transition: transform 0.2s ease;
+    width: 18px;
+    height: 18px;
+    color: var(--teal);
+    transition: transform 0.25s ease;
     flex-shrink: 0;
 }
 
 details[open] summary .arrow-icon {
     transform: rotate(45deg);
-    color: var(--purple);
 }
 
 .legal-content {
@@ -399,13 +384,13 @@ details[open] summary .arrow-icon {
 .tldr-box {
     background: var(--bg-subtle);
     border: 1px solid var(--border);
-    border-left: 3px solid var(--purple);
+    border-left: 3px solid var(--teal);
     border-radius: 0 var(--radius-md) var(--radius-md) 0;
     padding: var(--space-5);
 }
 
 .tldr-box strong {
-    color: var(--purple);
+    color: var(--teal);
     font-size: 0.8125rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -435,7 +420,7 @@ details[open] summary .arrow-icon {
 .footer-rule {
     width: 48px;
     height: 2px;
-    background: var(--purple);
+    background: var(--teal);
     margin: 0 auto var(--space-8);
     border-radius: 2px;
 }
@@ -457,7 +442,7 @@ details[open] summary .arrow-icon {
 }
 
 .legal-footer .email-link {
-    color: var(--purple);
+    color: var(--teal);
     font-weight: 400;
 }
 

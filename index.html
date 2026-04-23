@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://raw.githubusercontent.com/Leonm99/TranscribeItLegal/refs/heads/main/favicons/apple-touch-icon.png">
-    <meta name="theme-color" content="#533afd">
+    <meta name="theme-color" content="#186584">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Legal - Transcribe • IT</title>
 </head>
@@ -68,7 +68,7 @@
             <details class="legal-accordion">
                 <summary>
                     Privacy Policy
-                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                 </summary>
                 <div class="legal-content">
 
@@ -86,15 +86,32 @@
                     <p><strong>Effective Date:</strong> January 17, 2026</p>
                     <p>This Privacy Notice for Leon Mischlich (doing business as Transcribe • IT) describes how and why we might access, collect, store, use, and/or share your personal information when you use our services.</p>
 
-                    <h4>1. What Information Do We Collect?</h4>
+                    <h4>1. Who We Are</h4>
+                    <p><strong>Controller:</strong> Leon Mischlich<br>
+                    Address: Friedensstraße 14, 65451 Kelsterbach, Germany<br>
+                    Email: <a href="mailto:app.transcribe.it@gmail.com" class="text-link">app.transcribe.it@gmail.com</a></p>
+                    <p>We are not required to designate a Data Protection Officer (DPO) as we do not fall under the thresholds of Article 37 GDPR.</p>
+                    <p><strong>Supervisory Authority:</strong> Der Hessische Beauftragte für Datenschutz und Informationsfreiheit (HBDI), Gustav-Stresemann-Ring 1, 65189 Wiesbaden, Germany.</p>
+
+                    <h4>2. What Information Do We Collect?</h4>
                     <ul>
-                        <li><strong>Account Data:</strong> Email addresses (via Firebase/Social Login) to manage your Pro subscription status.</li>
+                        <li><strong>Account Data:</strong> Email addresses (via Firebase Authentication / Social Login) to manage your Pro subscription status.</li>
                         <li><strong>Audio &amp; Video Data:</strong> Files you voluntarily upload for transcription.</li>
-                        <li><strong>Device Data:</strong> IP address, device ID, operating system (collected automatically for security).</li>
+                        <li><strong>Device Data:</strong> IP address, device ID, operating system (collected automatically for security and rate limiting).</li>
                         <li><strong>Usage &amp; Analytics Data (Anonymous):</strong> We collect anonymous metrics to improve app stability and user experience.</li>
                     </ul>
 
-                    <h4>Detailed Analytics (Firebase)</h4>
+                    <h4>3. How Do We Process Your Information?</h4>
+                    <p>We process your information to provide the following services:</p>
+                    <ul>
+                        <li><strong>Transcription:</strong> Audio/video files are encrypted in transit and sent to Groq, Inc. (USA) for speech-to-text processing. Files are deleted from Groq's systems immediately after transcription.</li>
+                        <li><strong>Summarization (Pro):</strong> Transcripts are sent to OpenAI, LLC (USA) for AI-powered summarization. Input content is NOT used to train OpenAI models.</li>
+                        <li><strong>Translation (Pro):</strong> Transcripts are sent to OpenAI, LLC (USA) for translation. Input content is NOT used to train OpenAI models.</li>
+                        <li><strong>Account Management:</strong> Firebase Authentication manages your account and subscription status.</li>
+                        <li><strong>Anonymous Analytics:</strong> Firebase Analytics records aggregate usage events without linking personal identifiers.</li>
+                    </ul>
+
+                    <h4>4. Detailed Analytics (Firebase)</h4>
                     <p>We log specific events to understand how the app is used. <strong>No personal identifiers (like email or name) are linked to these events.</strong> You can disable this collection at any time in the <em>App Settings &gt; Usage Analysis</em>.</p>
                     <ul>
                         <li><strong>General Interaction:</strong> App first open, session start, and screen views.</li>
@@ -103,37 +120,65 @@
                         <li><strong>Performance &amp; Stability:</strong> Startup time, API response times (HTTP status), and crash reports.</li>
                     </ul>
 
-                    <h4>2. How Do We Process Your Information?</h4>
-                    <p>We process your information to provide services (transcription via Groq/OpenAI), manage accounts, process payments, and improve app performance through anonymous analytics.</p>
-
-                    <h4>3. Legal Bases (GDPR)</h4>
+                    <h4>5. Legal Bases (GDPR)</h4>
                     <p>We rely on the following legal bases to process your personal information:</p>
                     <ul>
-                        <li><strong>Performance of a Contract:</strong> To deliver the transcription and AI services you requested.</li>
-                        <li><strong>Consent:</strong> For optional analytics (which you can revoke via Settings).</li>
-                        <li><strong>Legitimate Interests:</strong> To diagnose technical issues, prevent fraud, and improve the application's functionality based on anonymous usage patterns.</li>
+                        <li><strong>Performance of a Contract (Art. 6(1)(b) GDPR):</strong> To deliver the transcription, summarization, and translation services you requested.</li>
+                        <li><strong>Consent (Art. 6(1)(a) GDPR):</strong> For optional analytics (which you can revoke via Settings at any time).</li>
+                        <li><strong>Legitimate Interests (Art. 6(1)(f) GDPR):</strong> To diagnose technical issues, prevent fraud, and improve the application's functionality based on anonymous usage patterns.</li>
                     </ul>
 
-                    <h4>4. Sharing Your Information</h4>
+                    <h4>6. International Data Transfers</h4>
+                    <p>Some of our processors (Groq, Inc. and OpenAI, LLC) are based in the United States. Data transfers from the EU/EEA to these countries are covered by:</p>
+                    <ul>
+                        <li><strong>Standard Contractual Clauses (SCCs)</strong> as adopted by the European Commission, and/or</li>
+                        <li><strong>Adequacy decisions</strong> where applicable.</li>
+                    </ul>
+                    <p>You may request a copy of the applicable safeguards by contacting us at <a href="mailto:app.transcribe.it@gmail.com" class="text-link">app.transcribe.it@gmail.com</a>.</p>
+
+                    <h4>7. Sharing Your Information</h4>
                     <p>We share data strictly with the following third-party vendors under Data Processing Addendums (DPAs):</p>
                     <ul>
-                        <li><strong>Groq, Inc.:</strong> Speech-to-Text processing.</li>
-                        <li><strong>OpenAI, LLC:</strong> Translation and summarization.</li>
-                        <li><strong>Google (Firebase &amp; Analytics):</strong> Authentication, Database, and anonymous usage analysis.</li>
+                        <li><strong>Groq, Inc. (USA):</strong> Speech-to-Text processing.</li>
+                        <li><strong>OpenAI, LLC (USA):</strong> Translation and summarization.</li>
+                        <li><strong>Google Ireland Limited (Ireland):</strong> Firebase — Authentication, Database, Cloud Functions, and anonymous usage analysis.</li>
                     </ul>
 
                     <div class="disclaimer-box">
                         <strong>AI &amp; Data Training</strong>
-                        Your uploaded content is NOT used to train the AI models of our providers (Groq/OpenAI).
+                        Your uploaded content and generated transcripts are NOT used to train the AI models of our providers (Groq/OpenAI).
                     </div>
 
-                    <h4>5. Data Retention</h4>
-                    <p>Uploaded audio/video files are deleted from active processing buffers shortly after transcription ("Ephemeral Processing"). Text transcripts are stored locally or in the database until you delete them.</p>
+                    <h4>8. Data Retention</h4>
+                    <ul>
+                        <li><strong>Uploaded Audio/Video Files:</strong> Deleted from Groq's active processing buffers immediately after transcription is complete. We do not retain copies.</li>
+                        <li><strong>Transcripts:</strong> Stored in Firebase Firestore until you delete them or delete your account.</li>
+                        <li><strong>Firebase Authentication Data:</strong> Retained until you delete your account.</li>
+                        <li><strong>Anonymous Analytics:</strong> Aggregated data is retained for up to 14 months in accordance with Firebase Analytics data retention settings.</li>
+                    </ul>
 
-                    <h4>6. Your Privacy Rights</h4>
-                    <p>In the EEA/UK, you have the right to access, rectify, erase, restrict processing, and withdraw consent.</p>
-                    <p><strong>Right to Object (Analytics):</strong> You may opt-out of anonymous analytics tracking directly within the app under "Settings".</p>
-                    <p>For other requests, contact us at <a href="mailto:app.transcribe.it@gmail.com" class="text-link">app.transcribe.it@gmail.com</a>.</p>
+                    <h4>9. Data Security</h4>
+                    <p>All data in transit is encrypted using TLS 1.2+. Audio files are encrypted before transmission to our processing providers. Firebase Cloud Functions run in a hardened Google Cloud environment. No method of transmission over the internet is 100% secure; we cannot guarantee absolute security.</p>
+
+                    <h4>10. Your Privacy Rights</h4>
+                    <p>Under the GDPR, you have the following rights regarding your personal data:</p>
+                    <ul>
+                        <li><strong>Right of Access (Art. 15):</strong> Request a copy of your personal data.</li>
+                        <li><strong>Right to Rectification (Art. 16):</strong> Correct inaccurate data.</li>
+                        <li><strong>Right to Erasure (Art. 17):</strong> Request deletion of your data ("right to be forgotten").</li>
+                        <li><strong>Right to Restriction (Art. 18):</strong> Request restriction of processing.</li>
+                        <li><strong>Right to Data Portability (Art. 20):</strong> Receive your data in a structured, machine-readable format.</li>
+                        <li><strong>Right to Object (Art. 21):</strong> Object to processing based on legitimate interests.</li>
+                        <li><strong>Right to Withdraw Consent (Art. 7(3)):</strong> Revoke consent for optional analytics at any time in Settings.</li>
+                        <li><strong>Right to Lodge a Complaint (Art. 77):</strong> File a complaint with your local supervisory authority (e.g., HBDI in Hesse, Germany).</li>
+                    </ul>
+                    <p>To exercise any of these rights, contact us at <a href="mailto:app.transcribe.it@gmail.com" class="text-link">app.transcribe.it@gmail.com</a>. We will respond within 30 days.</p>
+
+                    <h4>11. Children's Privacy</h4>
+                    <p>Our services are not directed to children under 16 years of age. We do not knowingly collect personal data from minors. If you believe a child has provided us with personal data, please contact us and we will promptly delete it.</p>
+
+                    <h4>12. Changes to This Policy</h4>
+                    <p>We may update this Privacy Policy from time to time. We will notify you of material changes by updating the "Last Updated" date within the app. Continued use of the service after changes constitutes acceptance of the revised policy.</p>
 
                 </div>
             </details>
@@ -141,46 +186,90 @@
             <details class="legal-accordion">
                 <summary>
                     Terms of Service
-                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                 </summary>
                 <div class="legal-content">
                     <p><strong>Last Updated:</strong> January 16, 2026</p>
-                    <p>By accessing Transcribe • IT, you agree to these Legal Terms. If you do not agree, you are prohibited from using the Services.</p>
+                    <p>By accessing or using Transcribe • IT ("the Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you are prohibited from using the Service.</p>
 
-                    <h4>1. Services &amp; Limitations</h4>
-                    <p>The Services provide AI-powered transcriptions. You acknowledge that:</p>
+                    <h4>1. About the Service</h4>
+                    <p>Transcribe • IT is an Android application that provides AI-powered transcription, summarization, and translation of audio and video files. The Service is operated by Leon Mischlich, based in Kelsterbach, Germany.</p>
+
+                    <h4>2. Eligibility &amp; Age Restriction</h4>
+                    <p>You must be at least 18 years old to use this Service. By using the Service, you represent and warrant that you meet this age requirement. The Service is not intended for children under 16 years of age.</p>
+
+                    <h4>3. Services &amp; Limitations</h4>
+                    <p>The Service provides the following AI-powered features:</p>
                     <ul>
-                        <li>Output quality depends on audio quality.</li>
-                        <li>Services are not tailored for HIPAA/FISMA compliance.</li>
-                        <li>You must be at least 18 years old.</li>
+                        <li><strong>Transcription:</strong> Converts audio/video files to text using Groq's speech-to-text API.</li>
+                        <li><strong>Summarization (Pro):</strong> Generates an AI-powered summary of your transcript using OpenAI.</li>
+                        <li><strong>Translation (Pro):</strong> Translates your transcript to a target language using OpenAI.</li>
+                    </ul>
+                    <p>You acknowledge that:</p>
+                    <ul>
+                        <li>Output quality depends on audio quality, speaker clarity, and language support.</li>
+                        <li>The Service is not tailored for HIPAA, FISMA, or GDPR-specific compliance use cases beyond standard data processing.</li>
+                        <li>AI outputs may contain errors, omissions, or hallucinations. Review all outputs before relying on them.</li>
                     </ul>
 
-                    <h4>2. Intellectual Property &amp; User Content</h4>
-                    <p>You retain ownership of your uploaded files and generated transcripts. You grant us a license solely to process this data to provide the service.</p>
+                    <h4>4. User Accounts</h4>
+                    <p>You must create an account to use the Service. You are responsible for keeping your login credentials secure and for all activity under your account. We reserve the right to suspend or terminate accounts that violate these Terms.</p>
 
-                    <h4>3. User Representations</h4>
-                    <p>You warrant that you have obtained <strong>all necessary consents</strong> from individuals recorded in your files. You are responsible for complying with wiretapping and privacy laws.</p>
-
-                    <h4>4. Subscriptions &amp; Refunds</h4>
-                    <p>Subscriptions are managed via Google Play. We cannot cancel subscriptions on your behalf; you must do so via the Play Store settings.</p>
-
-                    <h4>5. Prohibited Activities</h4>
+                    <h4>5. Subscriptions &amp; Billing</h4>
+                    <p>The Service offers a Free tier and a Pro tier (monthly or yearly). Subscriptions are managed via Google Play. All payments are processed by Google; we have no control over payment disputes, refunds, or chargebacks.</p>
                     <ul>
-                        <li>Do not reverse engineer the app.</li>
-                        <li>Do not use the Free Tier to circumvent limits.</li>
-                        <li>Do not generate illegal or policy-violating content.</li>
+                        <li>You may cancel your subscription at any time via Google Play Store settings.</li>
+                        <li>Refunds are governed exclusively by Google's refund policies.</li>
+                        <li>We cannot cancel or modify subscriptions on your behalf.</li>
+                        <li>Pro tier benefits (transcription minutes, summarization, translation) reset according to your billing cycle.</li>
+                    </ul>
+
+                    <h4>6. Your Content &amp; Intellectual Property</h4>
+                    <p><strong>Your Content:</strong> You retain full ownership of all audio/video files you upload and the transcripts, summaries, and translations generated from them ("Your Content"). You grant us a limited, non-exclusive license to process Your Content solely to provide the Service.</p>
+                    <p><strong>Our Content:</strong> The Transcribe • IT application, name, logo, and all related intellectual property are owned by Leon Mischlich.</p>
+                    <p><strong>Data Deletion:</strong> When you delete your account or individual transcripts, Your Content is permanently removed from our systems within 30 days. We do not retain backups of Your Content after deletion.</p>
+
+                    <h4>7. User Representations</h4>
+                    <p>You warrant that:</p>
+                    <ul>
+                        <li>You have obtained <strong>all necessary consents</strong> from every individual who appears in or is audible in files you upload for transcription.</li>
+                        <li>You will not use the Service to transcribe, summarize, or translate files that you are not authorized to process under applicable wiretapping, privacy, or data protection laws.</li>
+                        <li>Your Content does not violate any third party's rights.</li>
+                    </ul>
+
+                    <h4>8. Prohibited Activities</h4>
+                    <p>You agree not to:</p>
+                    <ul>
+                        <li>Reverse engineer, decompile, or disassemble the application.</li>
+                        <li>Use the Free Tier to circumvent subscription limits (e.g., creating multiple accounts).</li>
+                        <li>Generate content that is illegal, defamatory, or violates the rights of others.</li>
+                        <li>Use the Service in a manner that exceeds rate limits or disrupts its availability.</li>
+                        <li>Resell, redistribute, or sublicense access to the Service.</li>
                     </ul>
 
                     <div class="disclaimer-box">
                         <strong>Disclaimer of Warranties</strong>
-                        THE SERVICES ARE PROVIDED "AS-IS". We do not guarantee the accuracy of AI transcriptions. AI may hallucinate. Do not rely on output for professional (legal/medical) advice without verification.
+                        THE SERVICE IS PROVIDED "AS-IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. WE DO NOT GUARANTEE THE ACCURACY, COMPLETENESS, OR RELIABILITY OF AI TRANSCRIPTIONS, SUMMARIES, OR TRANSLATIONS. AI MODELS ARE INHERENTLY NON-DETERMINISTIC AND MAY PRODUCE INCORRECT OR HALLUCINATED OUTPUTS. DO NOT USE AI OUTPUTS FOR PROFESSIONAL LEGAL, MEDICAL, OR SAFETY-CRITICAL DECISIONS WITHOUT INDEPENDENT VERIFICATION.
                     </div>
 
-                    <h4>6. Limitation of Liability</h4>
-                    <p>Our liability is limited to the amount paid by you in the six (6) months prior to the cause of action. We are not liable for indirect damages or data loss.</p>
+                    <h4>9. Limitation of Liability</h4>
+                    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, OUR LIABILITY IS LIMITED TO THE TOTAL AMOUNT PAID BY YOU TO US IN THE SIX (6) MONTHS IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM. WE ARE NOT LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, OR GOODWILL, REGARDLESS OF THE THEORY OF LIABILITY.</p>
 
-                    <h4>7. Governing Law</h4>
-                    <p>These terms are governed by the laws of <strong>Germany</strong>. Jurisdiction: Hessen.</p>
+                    <h4>10. Indemnification</h4>
+                    <p>You agree to indemnify, defend, and hold harmless Leon Mischlich from and against any claims, damages, losses, or expenses (including reasonable legal fees) arising out of your violation of these Terms, your misuse of the Service, or your violation of any applicable law or third-party right.</p>
+
+                    <h4>11. Changes to the Service &amp; Terms</h4>
+                    <p>We may modify, suspend, or discontinue any aspect of the Service at any time without prior notice. We may also update these Terms from time to time. Material changes will be communicated via the app. Continued use of the Service after changes take effect constitutes acceptance of the revised Terms.</p>
+
+                    <h4>12. Governing Law &amp; Dispute Resolution</h4>
+                    <p>These Terms are governed by the laws of <strong>Germany</strong>, without regard to conflict of law principles. Any dispute arising from these Terms or your use of the Service shall be subject to the exclusive jurisdiction of the courts of <strong>Hesse, Germany</strong>.</p>
+
+                    <h4>13. Severability</h4>
+                    <p>If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.</p>
+
+                    <h4>14. Contact</h4>
+                    <p>For questions about these Terms, contact us at <a href="mailto:app.transcribe.it@gmail.com" class="text-link">app.transcribe.it@gmail.com</a>.</p>
+
                 </div>
             </details>
 
