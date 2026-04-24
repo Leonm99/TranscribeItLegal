@@ -152,13 +152,13 @@
                     <h4>8. Data Retention</h4>
                     <ul>
                         <li><strong>Uploaded Audio/Video Files:</strong> Deleted from Groq's active processing buffers immediately after transcription is complete. We do not retain copies.</li>
-                        <li><strong>Transcripts:</strong> Stored in Firebase Firestore until you delete them or delete your account.</li>
+                        <li><strong>Transcripts:</strong> Stored locally on your device in an encrypted Room database. If you use Google Drive backup (Pro), transcripts are included in your personal Google Drive backup — we have no access to that data.</li>
                         <li><strong>Firebase Authentication Data:</strong> Retained until you delete your account.</li>
                         <li><strong>Anonymous Analytics:</strong> Aggregated data is retained for up to 14 months in accordance with Firebase Analytics data retention settings.</li>
                     </ul>
 
                     <h4>9. Data Security</h4>
-                    <p>All data in transit is encrypted using TLS 1.2+. Audio files are encrypted before transmission to our processing providers. Firebase Cloud Functions run in a hardened Google Cloud environment. No method of transmission over the internet is 100% secure; we cannot guarantee absolute security.</p>
+                    <p>All data in transit to our service providers is encrypted using TLS 1.2+. Audio/video files are sent directly to Groq for processing. We do not encrypt the audio content itself end-to-end before sending.</p>
 
                     <h4>10. Your Privacy Rights</h4>
                     <p>Under the GDPR, you have the following rights regarding your personal data:</p>
@@ -193,7 +193,7 @@
                     <p>By accessing or using Transcribe • IT ("the Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you are prohibited from using the Service.</p>
 
                     <h4>1. About the Service</h4>
-                    <p>Transcribe • IT is an Android application that provides AI-powered transcription, summarization, and translation of audio and video files. The Service is operated by Leon Mischlich, based in Kelsterbach, Germany.</p>
+                    <p>Transcribe • IT is an Android application that provides AI-powered transcription, summarization, and translation of audio and video files.</p>
 
                     <h4>2. Eligibility &amp; Age Restriction</h4>
                     <p>You must be at least 18 years old to use this Service. By using the Service, you represent and warrant that you meet this age requirement. The Service is not intended for children under 16 years of age.</p>
@@ -226,8 +226,7 @@
 
                     <h4>6. Your Content &amp; Intellectual Property</h4>
                     <p><strong>Your Content:</strong> You retain full ownership of all audio/video files you upload and the transcripts, summaries, and translations generated from them ("Your Content"). You grant us a limited, non-exclusive license to process Your Content solely to provide the Service.</p>
-                    <p><strong>Our Content:</strong> The Transcribe • IT application, name, logo, and all related intellectual property are owned by Leon Mischlich.</p>
-                    <p><strong>Data Deletion:</strong> When you delete your account or individual transcripts, Your Content is permanently removed from our systems within 30 days. We do not retain backups of Your Content after deletion.</p>
+                    <p><strong>Data Deletion:</strong> When you delete your account, all associated data is permanently removed from our systems within 30 days. We do not retain backups of your data after deletion.</p>
 
                     <h4>7. User Representations</h4>
                     <p>You warrant that:</p>
